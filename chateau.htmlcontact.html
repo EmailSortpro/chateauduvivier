@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Château du Vivier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="main-nav"></nav>
+    
+    <header class="page-header">
+        <div class="container">
+            <h1>Contactez-nous</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Accueil</a> / Contact
+            </div>
+        </div>
+    </header>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="content-grid">
+                <div class="content-text">
+                    <h2>Venez nous rencontrer</h2>
+                    <p>
+                        Notre équipe est à votre écoute pour vous accompagner dans l'organisation 
+                        de votre événement. N'hésitez pas à nous contacter pour planifier une visite 
+                        du château ou pour toute demande d'information.
+                    </p>
+                    
+                    <div style="margin: 30px 0;">
+                        <h3 style="color: var(--color-primary); margin-bottom: 15px;">Informations pratiques</h3>
+                        <p><strong>Adresse :</strong><br>
+                        Château du Vivier<するbr>
+                        49460 Écuillé<br>
+                        Maine-et-Loire, France</p>
+                        
+                        <p style="margin-top: 20px;"><strong>Téléphone :</strong><br>
+                        02 41 42 65 55</p>
+                        
+                        <p style="margin-top: 20px;"><strong>Email :</strong><br>
+                        contact@chateauduvivier.fr</p>
+                        
+                        <p style="margin-top: 20px;"><strong>Horaires de visite :</strong><br>
+                        Sur rendez-vous uniquement<br>
+                        Du mardi au samedi : 10h - 18h</p>
+                    </div>
+
+                    <h3 style="color: var(--color-primary); margin-top: 30px; margin-bottom: 15px;">Accès</h3>
+                    <p><strong>En voiture :</strong> À 20 minutes d'Angers par la D323</p>
+                    <p><strong>En train :</strong> Gare d'Angers (20 min en taxi)</p>
+                    <p><strong>Depuis Paris :</strong> 1h30 en TGV jusqu'à Angers</p>
+                </div>
+                <div class="content-image">
+                    <form class="contact-form" id="contactForm">
+                        <h3 style="text-align: center; margin-bottom: 30px; color: var(--color-dark);">Demande de renseignements</h3>
+                        
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="event-type">Type d'événement *</label>
+                            <select id="event-type" name="event-type" required>
+                                <option value="">Sélectionnez...</option>
+                                <option value="mariage">Mariage</option>
+                                <option value="entreprise">Événement d'entreprise</option>
+                                <option value="reception">Réception privée</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="date">Date envisagée</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="guests">Nombre d'invités</label>
+                            <input type="number" id="guests" name="guests" min="1" max="300">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required placeholder="Décrivez votre projet..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Envoyer ma demande</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 0;">
+        <div style="width: 100%; height: 450px; background: #f0f0f0; position: relative;">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.8367194571!2d-0.6836!3d47.5889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48087e6f7d5a1a1f%3A0x1234567890abcdef!2sCh%C3%A2teau%20du%20Vivier!5e0!3m2!1sfr!2sfr!4v1234567890"
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Château du Vivier</h4>
+                    <p>Lieu de réception d'exception<br>
+                    49460 Écuillé, France<br>
+                    Tél: 02 41 42 65 55</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="chateau.html">Le Château</a></li>
+                        <li><a href="mariages.html">Mariages</a></li>
+                        <li><a href="entreprise.html">Entreprise</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Château du Vivier. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="menu.js"></script>
+</body>
+</html>
