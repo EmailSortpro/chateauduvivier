@@ -23,7 +23,6 @@
             width: 100%;
             height: 600px;
             overflow: hidden;
-            background: #333;
         }
         
         .hero-image {
@@ -124,15 +123,15 @@
     
     <!-- Section Hero avec Image du Château -->
     <section class="hero-section">
-        <!-- Image du Château du Vivier depuis Wikimedia Commons -->
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ch%C3%A2teau_du_Vivier_%C3%A0_%C3%89cuill%C3%A9_DSC_0244.jpg/1920px-Ch%C3%A2teau_du_Vivier_%C3%A0_%C3%89cuill%C3%A9_DSC_0244.jpg" 
+        <!-- Image du Château du Vivier depuis le site officiel -->
+        <img src="https://www.chateauduvivier.com/images/chateau-du-vivier-4.jpg" 
              alt="Château du Vivier - Facade principale" 
              class="hero-image"
              onerror="this.src='https://images.unsplash.com/photo-1578662996442-48f60103fc9e?w=1920&q=80'">
         
-        <div class="hero-overlay">
-            <h1 class="hero-title">Un lieu d'exception pour vos événements</h1>
-            <p class="hero-subtitle">Château du XVIIe siècle au cœur de l'Anjou</p>
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white; z-index: 10;">
+            <h1 style="font-size: 3rem; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Un lieu d'exception pour vos événements</h1>
+            <p style="font-size: 1.5rem; margin-bottom: 30px; text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">Château du XVIIe siècle au cœur de l'Anjou</p>
             <a href="chateau.html" class="btn-primary">Découvrir le château</a>
         </div>
     </section>
@@ -141,10 +140,11 @@
     <section class="award-section">
         <div class="container">
             <div class="award-badge">
-                <img src="https://cdn1.mariages.net/assets/img/badges/2025/badge-as_fr_FR@2x.png" 
-                     alt="Mariages.net Awards 2025" 
-                     style="width: 150px; height: auto;">
-                <p style="margin-top: 10px; font-size: 1.1rem; color: #c9a961; font-weight: 600;">Lauréat 2025</p>
+                <img src="https://cdn1.mariages.net/assets/img/badges/2024/badge-as_fr_FR@2x.png" 
+                     alt="Mariages.net Awards 2024" 
+                     style="width: 150px; height: auto;"
+                     onerror="this.style.display='none'">
+                <p style="margin-top: 10px; font-size: 1.1rem; color: #c9a961; font-weight: 600;">Lauréat Awards - Lieu de réception</p>
             </div>
         </div>
     </section>
