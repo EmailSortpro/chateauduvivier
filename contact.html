@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Château du Vivier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="main-nav"></nav>
+    
+    <header class="page-header">
+        <h1>Contactez-nous</h1>
+        <div class="breadcrumb">
+            <a href="index.html">Accueil</a> / Contact
+        </div>
+    </header>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="content-grid">
+                <div class="content-text">
+                    <h2>Prenons contact</h2>
+                    <p>
+                        Nous serions ravis d'échanger avec vous sur votre projet d'événement. 
+                        Notre équipe est à votre écoute pour créer avec vous un moment unique et inoubliable.
+                    </p>
+                    
+                    <div class="contact-info" style="margin-top: 40px;">
+                        <div style="margin-bottom: 25px;">
+                            <h4 style="color: var(--color-primary); margin-bottom: 10px;">📍 Adresse</h4>
+                            <p>Château du Vivier<br>
+                            49460 Écuillé<br>
+                            Maine-et-Loire, France</p>
+                        </div>
+                        
+                        <div style="margin-bottom: 25px;">
+                            <h4 style="color: var(--color-primary); margin-bottom: 10px;">📞 Téléphone</h4>
+                            <p>02 41 42 65 55<br>
+                            Du lundi au vendredi : 9h-18h<br>
+                            Samedi : 10h-17h</p>
+                        </div>
+                        
+                        <div style="margin-bottom: 25px;">
+                            <h4 style="color: var(--color-primary); margin-bottom: 10px;">✉️ Email</h4>
+                            <p>contact@chateauduvivier.fr<br>
+                            evenements@chateauduvivier.fr</p>
+                        </div>
+                        
+                        <div>
+                            <h4 style="color: var(--color-primary); margin-bottom: 10px;">🚗 Accès</h4>
+                            <p>À 20 minutes d'Angers<br>
+                            À 1h30 de Paris en TGV<br>
+                            À 45 minutes de Nantes<br>
+                            Parking gratuit sur place</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <form id="contactForm" class="contact-form">
+                        <h3 style="margin-bottom: 30px; text-align: center;">Demande de renseignements</h3>
+                        
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Téléphone *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="event-type">Type d'événement *</label>
+                            <select id="event-type" name="event-type" required>
+                                <option value="">Sélectionnez...</option>
+                                <option value="mariage">Mariage</option>
+                                <option value="seminaire">Séminaire d'entreprise</option>
+                                <option value="team-building">Team Building</option>
+                                <option value="gala">Soirée de Gala</option>
+                                <option value="lancement">Lancement de produit</option>
+                                <option value="anniversaire">Anniversaire</option>
+                                <option value="autre">Autre événement privé</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="date">Date envisagée</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="guests">Nombre d'invités</label>
+                            <input type="number" id="guests" name="guests" min="1" max="300">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Votre message *</label>
+                            <textarea id="message" name="message" required 
+                                      placeholder="Décrivez-nous votre projet..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label style="display: flex; align-items: center; font-weight: normal;">
+                                <input type="checkbox" name="newsletter" style="width: auto; margin-right: 10px;">
+                                Je souhaite recevoir la newsletter du Château du Vivier
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            Envoyer ma demande
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 0;">
+        <div style="width: 100%; height: 450px; background: #f0f0f0; position: relative;">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2697.5898745739!2d-0.6808!3d47.6314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4808a1234567890%3A0xabcdef1234567890!2sCh%C3%A2teau%20du%20Vivier!5e0!3m2!1sfr!2sfr!4v1234567890"
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center;">
+                <h3 style="margin-bottom: 10px;">Château du Vivier</h3>
+                <p>49460 Écuillé, France</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Planifiez votre visite</h2>
+            <p>Venez découvrir le château et ses espaces lors d'une visite privée</p>
+            <div class="cta-buttons">
+                <a href="tel:0241426555" class="btn btn-primary">Nous appeler</a>
+                <a href="galerie.html" class="btn btn-secondary">Voir la galerie</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Château du Vivier</h4>
+                    <p>Lieu de réception d'exception<br>
+                    49460 Écuillé, France<br>
+                    Tél: 02 41 42 65 55</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="chateau.html">Le Château</a></li>
+                        <li><a href="mariages.html">Mariages</a></li>
+                        <li><a href="entreprise.html">Entreprise</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Château du Vivier. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="menu.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            initContactForm();
+        });
+    </script>
+</body>
+</html>
