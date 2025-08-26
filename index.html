@@ -21,14 +21,16 @@
         .hero-section {
             position: relative;
             width: 100%;
-            height: 600px;
+            height: 100vh;
             overflow: hidden;
+            background-image: url('https://www.chateauduvivier.com/images/chateau-du-vivier-4.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
         
         .hero-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            display: none;
         }
         
         .hero-overlay {
@@ -121,30 +123,31 @@
 <body>
     <nav id="main-nav"></nav>
     
-    <!-- Section Hero avec Image du Château -->
+    <!-- Section Hero avec Image du Château en fond -->
     <section class="hero-section">
-        <!-- Image du Château du Vivier depuis le site officiel -->
-        <img src="https://www.chateauduvivier.com/images/chateau-du-vivier-4.jpg" 
-             alt="Château du Vivier - Facade principale" 
-             class="hero-image"
-             onerror="this.src='https://images.unsplash.com/photo-1578662996442-48f60103fc9e?w=1920&q=80'">
-        
         <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white; z-index: 10;">
-            <h1 style="font-size: 3rem; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Un lieu d'exception pour vos événements</h1>
-            <p style="font-size: 1.5rem; margin-bottom: 30px; text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">Château du XVIIe siècle au cœur de l'Anjou</p>
-            <a href="chateau.html" class="btn-primary">Découvrir le château</a>
+            <h1 style="font-size: 3.5rem; margin-bottom: 20px; text-shadow: 3px 3px 6px rgba(0,0,0,0.9); font-family: 'Georgia', serif;">Un lieu d'exception pour vos événements</h1>
+            <p style="font-size: 1.8rem; margin-bottom: 40px; text-shadow: 2px 2px 4px rgba(0,0,0,0.9);">Château du XVIIe siècle au cœur de l'Anjou</p>
+            <a href="chateau.html" class="btn-primary" style="font-size: 1.2rem; padding: 18px 45px;">Découvrir le château</a>
         </div>
     </section>
 
-    <!-- Section Badge Mariages.net -->
-    <section class="award-section">
+    <!-- Section Badges Awards -->
+    <section class="award-section" style="padding: 50px 0;">
         <div class="container">
-            <div class="award-badge">
-                <img src="https://cdn1.mariages.net/assets/img/badges/2024/badge-as_fr_FR@2x.png" 
-                     alt="Mariages.net Awards 2024" 
-                     style="width: 150px; height: auto;"
-                     onerror="this.style.display='none'">
-                <p style="margin-top: 10px; font-size: 1.1rem; color: #c9a961; font-weight: 600;">Lauréat Awards - Lieu de réception</p>
+            <div style="display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap;">
+                <div class="award-badge" style="text-align: center;">
+                    <img src="https://cdn1.mariages.net/img/badges/2024/badge-weddingawards_fr_FR.jpg" 
+                         alt="Wedding Awards 2024 Mariages.net" 
+                         style="width: 140px; height: auto; display: block; margin: 0 auto;">
+                    <p style="margin-top: 10px; font-size: 0.95rem; color: #c9a961; font-weight: 600;">Wedding Awards 2024</p>
+                </div>
+                <div class="award-badge" style="text-align: center;">
+                    <img src="https://asset1.zankyou.com/img/sections/badgets/zk_recommend/circle/badge_black_fr.png" 
+                         alt="Zankyou Recommended" 
+                         style="width: 140px; height: auto; display: block; margin: 0 auto;">
+                    <p style="margin-top: 10px; font-size: 0.95rem; color: #c9a961; font-weight: 600;">Recommandé par Zankyou</p>
+                </div>
             </div>
         </div>
     </section>
