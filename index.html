@@ -4,32 +4,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Château du Vivier - Un lieu d'exception pour vos événements</title>
+    <style>
+        /* Styles essentiels intégrés pour garantir l'affichage */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+        }
+        
+        .hero-section {
+            position: relative;
+            width: 100%;
+            height: 600px;
+            overflow: hidden;
+            background: #333;
+        }
+        
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        
+        .hero-title {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+        }
+        
+        .btn-primary {
+            background: #c9a961;
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            display: inline-block;
+            transition: all 0.3s ease;
+            border: 2px solid #c9a961;
+        }
+        
+        .btn-primary:hover {
+            background: transparent;
+            color: #c9a961;
+            border-color: #c9a961;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .award-section {
+            padding: 40px 0;
+            background: #f8f8f8;
+            text-align: center;
+        }
+        
+        .section {
+            padding: 60px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+        
+        .intro-text {
+            text-align: center;
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            color: #2c3e50;
+            line-height: 1.8;
+        }
+        
+        nav {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+    </style>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav id="main-nav"></nav>
     
-    <header class="hero">
-        <div class="hero-image">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ch%C3%A2teau_du_Vivier_%C3%A0_%C3%89cuill%C3%A9_DSC_0244.jpg/1920px-Ch%C3%A2teau_du_Vivier_%C3%A0_%C3%89cuill%C3%A9_DSC_0244.jpg" alt="Château du Vivier">
-            <div class="hero-overlay">
-                <h1 class="hero-title">Un lieu d'exception pour vos événements</h1>
-                <p class="hero-subtitle">Château du XVIIe siècle au cœur de l'Anjou</p>
-                <a href="chateau.html" class="btn btn-primary">Découvrir le château</a>
-            </div>
+    <!-- Section Hero avec Image du Château -->
+    <section class="hero-section">
+        <!-- Image du Château du Vivier depuis Wikimedia Commons -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ch%C3%A2teau_du_Vivier_%C3%A0_%C3%89cuill%C3%A9_DSC_0244.jpg/1920px-Ch%C3%A2teau_du_Vivier_%C3%A0_%C3%89cuill%C3%A9_DSC_0244.jpg" 
+             alt="Château du Vivier - Facade principale" 
+             class="hero-image"
+             onerror="this.src='https://images.unsplash.com/photo-1578662996442-48f60103fc9e?w=1920&q=80'">
+        
+        <div class="hero-overlay">
+            <h1 class="hero-title">Un lieu d'exception pour vos événements</h1>
+            <p class="hero-subtitle">Château du XVIIe siècle au cœur de l'Anjou</p>
+            <a href="chateau.html" class="btn-primary">Découvrir le château</a>
         </div>
-    </header>
+    </section>
 
+    <!-- Section Badge Mariages.net -->
     <section class="award-section">
         <div class="container">
             <div class="award-badge">
-                <img src="https://cdn1.mariages.net/assets/img/badges/2025/badge-as_fr_FR@2x.png" alt="Mariages.net Awards 2025" class="award-icon">
-                <p class="award-text">Lauréat 2025</p>
+                <img src="https://cdn1.mariages.net/assets/img/badges/2025/badge-as_fr_FR@2x.png" 
+                     alt="Mariages.net Awards 2025" 
+                     style="width: 150px; height: auto;">
+                <p style="margin-top: 10px; font-size: 1.1rem; color: #c9a961; font-weight: 600;">Lauréat 2025</p>
             </div>
         </div>
     </section>
 
-    <section class="intro-section">
+    <!-- Section Introduction -->
+    <section class="section">
         <div class="container">
             <h2 class="section-title">Bienvenue au Château du Vivier</h2>
             <p class="intro-text">
@@ -40,138 +161,155 @@
         </div>
     </section>
 
-    <section class="services-section">
+    <!-- Section Services avec images alternatives -->
+    <section class="section" style="background: #f8f8f8;">
         <div class="container">
             <h2 class="section-title">Nos Prestations</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800" alt="Mariages">
-                    <h3>Mariages</h3>
-                    <p>Célébrez le plus beau jour de votre vie dans un cadre féerique</p>
-                    <a href="mariages.html" class="btn-link">En savoir plus →</a>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px;">
+                
+                <!-- Carte Mariages -->
+                <div style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800&q=80" 
+                         alt="Mariages au château" 
+                         style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 20px;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Mariages</h3>
+                        <p style="color: #666; margin-bottom: 15px;">Célébrez le plus beau jour de votre vie dans un cadre féerique</p>
+                        <a href="mariages.html" style="color: #c9a961; text-decoration: none; font-weight: 500;">En savoir plus →</a>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=800" alt="Événements d'entreprise">
-                    <h3>Entreprise</h3>
-                    <p>Organisez vos séminaires et événements professionnels dans un lieu unique</p>
-                    <a href="entreprise.html" class="btn-link">En savoir plus →</a>
+                
+                <!-- Carte Entreprise -->
+                <div style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80" 
+                         alt="Événements d'entreprise" 
+                         style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 20px;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Entreprise</h3>
+                        <p style="color: #666; margin-bottom: 15px;">Organisez vos séminaires et événements professionnels dans un lieu unique</p>
+                        <a href="entreprise.html" style="color: #c9a961; text-decoration: none; font-weight: 500;">En savoir plus →</a>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800" alt="Réceptions">
-                    <h3>Réceptions privées</h3>
-                    <p>Un cadre exceptionnel pour tous vos événements privés</p>
-                    <a href="contact.html" class="btn-link">Nous contacter →</a>
+                
+                <!-- Carte Réceptions -->
+                <div style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80" 
+                         alt="Réceptions privées" 
+                         style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 20px;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Réceptions privées</h3>
+                        <p style="color: #666; margin-bottom: 15px;">Un cadre exceptionnel pour tous vos événements privés</p>
+                        <a href="contact.html" style="color: #c9a961; text-decoration: none; font-weight: 500;">Nous contacter →</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="features-section">
+    <!-- Section Pourquoi nous choisir -->
+    <section class="section">
         <div class="container">
             <h2 class="section-title">Pourquoi choisir le Château du Vivier ?</h2>
-            <div class="features-grid">
-                <div class="feature">
-                    <div class="feature-icon">🏰</div>
-                    <h4>Un château historique</h4>
-                    <p>Architecture du XVIIe siècle authentique et préservée</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px;">
+                <div style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 15px;">🏰</div>
+                    <h4 style="margin-bottom: 10px;">Un château historique</h4>
+                    <p style="color: #666;">Architecture du XVIIe siècle authentique et préservée</p>
                 </div>
-                <div class="feature">
-                    <div class="feature-icon">🌳</div>
-                    <h4>40 hectares de parc</h4>
-                    <p>Jardins à la française et espaces naturels préservés</p>
+                <div style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 15px;">🌳</div>
+                    <h4 style="margin-bottom: 10px;">40 hectares de parc</h4>
+                    <p style="color: #666;">Jardins à la française et espaces naturels préservés</p>
                 </div>
-                <div class="feature">
-                    <div class="feature-icon">👥</div>
-                    <h4>Capacité modulable</h4>
-                    <p>De 50 à 300 personnes selon vos besoins</p>
+                <div style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 15px;">👥</div>
+                    <h4 style="margin-bottom: 10px;">Capacité modulable</h4>
+                    <p style="color: #666;">De 50 à 300 personnes selon vos besoins</p>
                 </div>
-                <div class="feature">
-                    <div class="feature-icon">🍽️</div>
-                    <h4>Traiteur de qualité</h4>
-                    <p>Cuisine gastronomique avec nos partenaires sélectionnés</p>
+                <div style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 15px;">🍽️</div>
+                    <h4 style="margin-bottom: 10px;">Traiteur de qualité</h4>
+                    <p style="color: #666;">Cuisine gastronomique avec nos partenaires sélectionnés</p>
                 </div>
-                <div class="feature">
-                    <div class="feature-icon">🛏️</div>
-                    <h4>Hébergement sur place</h4>
-                    <p>15 chambres de charme pour vos invités</p>
+                <div style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 15px;">🛏️</div>
+                    <h4 style="margin-bottom: 10px;">Hébergement sur place</h4>
+                    <p style="color: #666;">15 chambres de charme pour vos invités</p>
                 </div>
-                <div class="feature">
-                    <div class="feature-icon">📍</div>
-                    <h4>Situation idéale</h4>
-                    <p>À 20 minutes d'Angers et 1h30 de Paris en TGV</p>
+                <div style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 15px;">📍</div>
+                    <h4 style="margin-bottom: 10px;">Situation idéale</h4>
+                    <p style="color: #666;">À 20 minutes d'Angers et 1h30 de Paris en TGV</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="testimonials-section">
+    <!-- Section Témoignages -->
+    <section class="section" style="background: #f8f8f8;">
         <div class="container">
             <h2 class="section-title">Ils nous font confiance</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial">
-                    <p class="testimonial-text">
-                        "Un lieu magique où notre mariage a dépassé toutes nos attentes. L'équipe est professionnelle et attentionnée."
-                    </p>
-                    <p class="testimonial-author">- Marie & Thomas, Juin 2024</p>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px;">
+                <div style="background: white; padding: 30px; border-radius: 8px; text-align: center;">
+                    <p style="font-style: italic; margin-bottom: 20px;">"Un lieu magique où notre mariage a dépassé toutes nos attentes. L'équipe est professionnelle et attentionnée."</p>
+                    <p style="color: #c9a961; font-weight: 600;">- Marie & Thomas, Juin 2024</p>
+                    <div style="color: #c9a961; margin-top: 10px;">⭐⭐⭐⭐⭐</div>
                 </div>
-                <div class="testimonial">
-                    <p class="testimonial-text">
-                        "Le cadre parfait pour notre séminaire d'entreprise. Nos collaborateurs ont été enchantés par le lieu."
-                    </p>
-                    <p class="testimonial-author">- Direction Générale, Groupe Horizon</p>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                <div style="background: white; padding: 30px; border-radius: 8px; text-align: center;">
+                    <p style="font-style: italic; margin-bottom: 20px;">"Le cadre parfait pour notre séminaire d'entreprise. Nos collaborateurs ont été enchantés par le lieu."</p>
+                    <p style="color: #c9a961; font-weight: 600;">- Direction Générale, Groupe Horizon</p>
+                    <div style="color: #c9a961; margin-top: 10px;">⭐⭐⭐⭐⭐</div>
                 </div>
-                <div class="testimonial">
-                    <p class="testimonial-text">
-                        "Un château sublime et une organisation sans faille. Notre événement a été une réussite totale."
-                    </p>
-                    <p class="testimonial-author">- Sophie L., Septembre 2024</p>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                <div style="background: white; padding: 30px; border-radius: 8px; text-align: center;">
+                    <p style="font-style: italic; margin-bottom: 20px;">"Un château sublime et une organisation sans faille. Notre événement a été une réussite totale."</p>
+                    <p style="color: #c9a961; font-weight: 600;">- Sophie L., Septembre 2024</p>
+                    <div style="color: #c9a961; margin-top: 10px;">⭐⭐⭐⭐⭐</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="cta-section">
+    <!-- Section CTA -->
+    <section style="background: linear-gradient(135deg, #c9a961, #b8964f); padding: 80px 0; text-align: center; color: white;">
         <div class="container">
-            <h2>Prêt à organiser votre événement ?</h2>
-            <p>Contactez-nous pour découvrir le château et discuter de votre projet</p>
-            <div class="cta-buttons">
-                <a href="contact.html" class="btn btn-primary">Demander un devis</a>
-                <a href="galerie.html" class="btn btn-secondary">Voir la galerie</a>
+            <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Prêt à organiser votre événement ?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 30px;">Contactez-nous pour découvrir le château et discuter de votre projet</p>
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <a href="contact.html" class="btn-primary" style="background: white; color: #c9a961;">Demander un devis</a>
+                <a href="galerie.html" class="btn-primary" style="background: transparent; border: 2px solid white;">Voir la galerie</a>
             </div>
         </div>
     </section>
 
-    <footer>
+    <!-- Footer -->
+    <footer style="background: #1a1a1a; color: white; padding: 60px 0 20px;">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Château du Vivier</h4>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px;">
+                <div>
+                    <h4 style="color: #c9a961; margin-bottom: 20px;">Château du Vivier</h4>
                     <p>Lieu de réception d'exception<br>
                     49460 Écuillé, France<br>
                     Tél: 02 41 42 65 55</p>
                 </div>
-                <div class="footer-section">
-                    <h4>Navigation</h4>
-                    <ul>
-                        <li><a href="chateau.html">Le Château</a></li>
-                        <li><a href="mariages.html">Mariages</a></li>
-                        <li><a href="entreprise.html">Entreprise</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                <div>
+                    <h4 style="color: #c9a961; margin-bottom: 20px;">Navigation</h4>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 10px;"><a href="chateau.html" style="color: white; text-decoration: none;">Le Château</a></li>
+                        <li style="margin-bottom: 10px;"><a href="mariages.html" style="color: white; text-decoration: none;">Mariages</a></li>
+                        <li style="margin-bottom: 10px;"><a href="entreprise.html" style="color: white; text-decoration: none;">Entreprise</a></li>
+                        <li style="margin-bottom: 10px;"><a href="contact.html" style="color: white; text-decoration: none;">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h4>Suivez-nous</h4>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook">📘</a>
-                        <a href="#" aria-label="Instagram">📷</a>
-                        <a href="#" aria-label="LinkedIn">💼</a>
+                <div>
+                    <h4 style="color: #c9a961; margin-bottom: 20px;">Suivez-nous</h4>
+                    <div style="font-size: 1.5rem;">
+                        <span style="margin-right: 15px;">📘</span>
+                        <span style="margin-right: 15px;">📷</span>
+                        <span>💼</span>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
+            <div style="text-align: center; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
                 <p>&copy; 2025 Château du Vivier. Tous droits réservés.</p>
             </div>
         </div>
